@@ -1,0 +1,16 @@
+.bg-navy{background-color: #023C6C !important;}
+.bg-blue{background-color: #2d78f7 !important;}
+.bg-green{background-color: #66AC4C !important;}
+.sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active, .sidebar-light-primary .nav-sidebar>.nav-item>.nav-link.active{background-color: #fff;color: #023C6C;}
+.small-box .icon{color:#ff7600}
+.small-box>.small-box-footer{background-color: #023C6C ;color: #fff !important;}
+.small-box>.small-box-footer:hover{background-color: #2d78f7 ;color: #fff !important;}
+.ui-widget-header { 
+    background: #023C6C !important; 
+    border: 1px solid #023C6C !important;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    border: 1px solid red !important;
+    color: red !important;
+}
