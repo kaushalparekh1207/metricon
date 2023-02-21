@@ -34,8 +34,8 @@
                 <form action="admin_login" method="post">
                     @csrf
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" name="username" placeholder="Enter Username"
-                            @if (Cookie::has('saved_username')) value="{{ Cookie::get('saved_username') }}" @endif
+                        <input type="email" class="form-control" name="email" placeholder="Enter email"
+                            @if (Cookie::has('saved_email')) value="{{ Cookie::get('saved_email') }}" @endif
                             required>
                         <div class="input-group-append">
                             <div class="input-group-text">

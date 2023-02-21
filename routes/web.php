@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,4 +16,20 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('login');
+});
+
+Route::controller(AdminController::class)->group(function () {
+
+    // Login Routes
+    Route::view('/login', 'login')->name('login');
+    Route::post('/admin_login', 'adminLogin');
+
+    // Logout Routes
+    // Route::get('/signout', function () {
+    //     if (session('user')) {
+    //         session()->pull('user');
+    //         session()->pull('f_year_id');
+    //     }
+    //     return redirect('login');
+    // });
 });
