@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,4 +33,11 @@ Route::controller(AdminController::class)->group(function () {
     //     }
     //     return redirect('login');
     // });
+});
+
+Route::controller(DashboardController::class)->group(function () {
+
+    // Login Routes
+    Route::view('/dashboard', 'index');
+    // Route::post('/admin_login', 'adminLogin');
 });

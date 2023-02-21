@@ -21,8 +21,8 @@
 <body class="hold-transition login-page">
     <div class="login-box">
         <div class="login-logo">
-            <img  class="mb-3" src="../images/metricon/logo-2.png" width="180">
-           
+            <img class="mb-3" src="../images/metricon/logo-2.png" width="180">
+
             <a href="index2.html"><br><b>Admin </b>Panel</a>
         </div>
         <!-- /.login-logo -->
@@ -35,8 +35,7 @@
                     @csrf
                     <div class="input-group mb-3">
                         <input type="email" class="form-control" name="email" placeholder="Enter email"
-                            @if (Cookie::has('saved_email')) value="{{ Cookie::get('saved_email') }}" @endif
-                            required>
+                            @if (Cookie::has('saved_email')) value="{{ Cookie::get('saved_email') }}" @endif required>
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-envelope"></span>
